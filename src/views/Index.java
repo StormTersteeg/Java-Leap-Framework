@@ -12,8 +12,8 @@ import java.awt.event.ActionEvent;
 public class Index extends View implements ActionListener {
     private CButton cbTest;
 
-    public Index(Container parent, String panel_name) {
-        super(parent, panel_name);
+    public Index(Container container, String name) {
+        super(container, name);
         setLayout(new GridBagLayout());
         setVisible(false);
 

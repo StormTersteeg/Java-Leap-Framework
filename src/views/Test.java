@@ -13,8 +13,8 @@ public class Test extends View implements ActionListener {
     private CButton cbTest;
     private long sinceLastLog = System.currentTimeMillis() / 1000L;
 
-    public Test(Container parent, String panel_name) {
-        super(parent, panel_name);
+    public Test(Container container, String name) {
+        super(container, name);
         setLayout(new GridBagLayout());
         setVisible(false);
 
