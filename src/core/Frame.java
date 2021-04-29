@@ -20,8 +20,8 @@ public class Frame extends JFrame {
         setVisible(true);
     }
 
-    public void addPanel(Object panel) {
-        container.addPanel((View)panel);
+    public void addView(Object view) {
+        container.addView((View)view);
     }
 
     public Container getContainer() {
