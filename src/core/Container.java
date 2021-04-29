@@ -30,17 +30,25 @@ public class Container extends JPanel {
     }
 
     public void switchView(View oldView, String name) {
-        oldView.onShadow();
-        remove(oldView);
+        boolean found = false;
 
         for (View view: views) {
             if (view.getName().equals(name)) {
+                oldView.onShadow();
+                oldView.setVisible(false);
+                remove(oldView);
+
                 currentView = view;
                 add(view);
                 view.setVisible(true);
                 view.onFocus();
+
+                found = true;
+                break;
             }
         }
+        
+        if (!found) {System.out.println("View " + name + " could not be found.");}
     }
 
     public View getCurrentView() {

@@ -25,7 +25,6 @@ public abstract class View extends JPanel {
     * @param  name  String name of the view to switch to.
     */
     public void changeFocus(String name) {
-        setVisible(false);
         parent.switchView(this, name);
     }
 
