@@ -9,6 +9,6 @@ public class Main {
         Frame frame = new Frame();
 
         // Add custom views here
-        frame.addPanel(new Test(frame.getMainPanel(), "Test"));
+        frame.addPanel(new Test(frame.getContainer(), "Test"));
     }
 }
