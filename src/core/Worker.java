@@ -3,9 +3,9 @@ package src.core;
 import java.util.TimerTask;
 
 public class Worker extends TimerTask {
-    private ViewContainer parent;
+    private Container parent;
 
-    public Worker(ViewContainer parent) {
+    public Worker(Container parent) {
         this.parent = parent;
     }
 

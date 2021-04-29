@@ -1,5 +1,7 @@
 package src.views;
-import src.core.*;
+import src.core.Container;
+import src.core.View;
+import src.core.Audio;
 import src.components.*;
 
 import javax.swing.*;
@@ -10,7 +12,7 @@ import java.awt.event.ActionEvent;
 public class Index extends View implements ActionListener {
     private CButton cbTest;
 
-    public Index(ViewContainer parent, String panel_name) {
+    public Index(Container parent, String panel_name) {
         super(parent, panel_name);
         setLayout(new GridBagLayout());
         setVisible(false);

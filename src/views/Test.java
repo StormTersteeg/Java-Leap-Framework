@@ -1,5 +1,7 @@
 package src.views;
-import src.core.*;
+import src.core.Container;
+import src.core.View;
+import src.core.Audio;
 import src.components.*;
 
 import javax.swing.*;
@@ -11,7 +13,7 @@ public class Test extends View implements ActionListener {
     private CButton cbTest;
     private long sinceLastLog = System.currentTimeMillis() / 1000L;
 
-    public Test(ViewContainer parent, String panel_name) {
+    public Test(Container parent, String panel_name) {
         super(parent, panel_name);
         setLayout(new GridBagLayout());
         setVisible(false);

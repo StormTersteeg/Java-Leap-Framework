@@ -6,12 +6,12 @@ import java.awt.*;
 import java.util.*;
 import java.util.Timer;
 
-public class ViewContainer extends JPanel {
+public class Container extends JPanel {
     private JFrame parent;
     private ArrayList<View> panels = new ArrayList<View>();
     private View currentPanel;
     
-    public ViewContainer(JFrame parent) {
+    public Container(JFrame parent) {
         this.parent = parent;
         setBackground(Color.black);
         setLayout(new GridLayout(0, 1));

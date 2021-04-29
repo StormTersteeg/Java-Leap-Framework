@@ -4,10 +4,10 @@ import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 
 public abstract class View extends JPanel {
-    private ViewContainer parent;
+    private Container parent;
     private String panel_name;
     
-    public View(ViewContainer parent, String panel_name) {
+    public View(Container parent, String panel_name) {
         this.parent = parent;
         this.panel_name = panel_name;
     }
@@ -45,7 +45,7 @@ public abstract class View extends JPanel {
     * Event that is triggered every x ms. Determined by the Worker in MainPanel.java.
     *
     * @param  now  a long timestamp in unix time stamp format.
-    * @see         ViewContainer
+    * @see         Container
     * @see         Worker
     */
     public abstract void onTick(long now);
