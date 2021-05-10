@@ -7,6 +7,7 @@ import src.components.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
 public class Index extends View implements ActionListener {
@@ -31,7 +32,7 @@ public class Index extends View implements ActionListener {
     }
 
     @Override
-    public void onFocus() {}
+    public void onFocus(ArrayList<String> parameters) {}
 
     @Override
     public void onShadow() {}

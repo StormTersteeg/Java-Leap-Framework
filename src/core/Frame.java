@@ -2,7 +2,6 @@ package src.core;
 
 import javax.swing.*;
 import java.awt.*;
-import java.lang.annotation.Native;
 
 public class Frame extends JFrame {
     private Container container;

@@ -7,6 +7,7 @@ import src.components.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
 public class Test extends View implements ActionListener {
@@ -32,7 +33,7 @@ public class Test extends View implements ActionListener {
     }
 
     @Override
-    public void onFocus() {
+    public void onFocus(ArrayList<String> parameters) {
         System.out.println("Showing the Test.java view");
     }
 
